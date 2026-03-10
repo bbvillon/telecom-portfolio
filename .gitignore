@@ -52,6 +52,9 @@
 !src/visualization/__init__.py
 !src/utils/__init__.py
 
+# ignore the projects folder completely for now
+/src/projects/
+
 # ══════════════════════════════════════════════════════════════════
 # tests/ — track everything
 !/tests/**
