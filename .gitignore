@@ -11,6 +11,7 @@
 !/output/
 !/reports/
 !/src/
+!/tests/
 !config.py
 !loading.py
 
@@ -47,6 +48,9 @@
 # ══════════════════════════════════════════════════════════════════
 # src/ 
 # ══════════════════════════════════════════════════════════════════
+!/src/fault_ticket/
+!/src/visualization/
+!/src/utils/
 /src/**
 !src/fault_ticket/pipeline.py
 !src/fault_ticket/metrics.py
