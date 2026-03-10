@@ -10,10 +10,10 @@
 !/notebooks/
 !/output/
 !/reports/
-!/src/
 !/tests/
 !config.py
 !loading.py
+!/LICENSE
 
 # ══════════════════════════════════════════════════════════════════
 # data/ — empty for now (all contents blocked)
@@ -48,17 +48,19 @@
 # ══════════════════════════════════════════════════════════════════
 # src/ 
 # ══════════════════════════════════════════════════════════════════
-!/src/fault_ticket/
-!/src/visualization/
-!/src/utils/
-/src/*
+!/src/
+!/src/**
+/src/**
+
 !src/fault_ticket/pipeline.py
 !src/fault_ticket/metrics.py
 !src/fault_ticket/analysis.py
 !src/fault_ticket/__init__.py
+
 !src/visualization/common_plots.py
 !src/visualization/fault_ticket_plots.py
 !src/visualization/__init__.py
+
 !src/utils/__init__.py
 !src/__init__.py
 
