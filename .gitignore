@@ -5,74 +5,59 @@
 !/.gitignore
 !/README.md
 !/requirements.txt
-!/data/
-!/docs/
-!/notebooks/
-!/output/
-!/reports/
-!/tests/
-!config.py
-!loading.py
+!/config.py
+!/loading.py
 !/LICENSE
+!/tests/
+!/docs/
+!/src/
 
 # ══════════════════════════════════════════════════════════════════
-# data/ — empty for now (all contents blocked)
-# ══════════════════════════════════════════════════════════════════
+# data/ — block all contents
 /data/**
 
-
-# ══════════════════════════════════════════════════════════════════
-# docs/ — empty for now (all contents blocked)
-# ══════════════════════════════════════════════════════════════════
+# docs/ — block everything except allowed file
 /docs/**
 !/docs/pipeline_decisions.md
 
-# ══════════════════════════════════════════════════════════════════
-# notebooks/ — empty for now (all contents blocked)
-# ══════════════════════════════════════════════════════════════════
+# notebooks/ — block all
 /notebooks/**
 
-
-# ══════════════════════════════════════════════════════════════════
-# output/ — empty for now (all contents blocked)
-# ══════════════════════════════════════════════════════════════════
+# output/ — block all
 /output/**
 
-
-# ══════════════════════════════════════════════════════════════════
-# reports/ — empty for now (all contents blocked)
-# ══════════════════════════════════════════════════════════════════
+# reports/ — block all
 /reports/**
 
-
 # ══════════════════════════════════════════════════════════════════
-# src/ 
-# ══════════════════════════════════════════════════════════════════
+# src/ — allow only specific files
 !/src/
-!/src/**
-/src/**
+!/src/fault_ticket/
+!/src/visualization/
+!/src/utils/
 
+# ignore everything inside src subfolders
+/src/fault_ticket/*
+/src/visualization/*
+/src/utils/*
+
+# allow only the portfolio modules
+!src/__init__.py
 !src/fault_ticket/pipeline.py
 !src/fault_ticket/metrics.py
 !src/fault_ticket/analysis.py
 !src/fault_ticket/__init__.py
-
 !src/visualization/common_plots.py
 !src/visualization/fault_ticket_plots.py
 !src/visualization/__init__.py
-
 !src/utils/__init__.py
-!src/__init__.py
 
 # ══════════════════════════════════════════════════════════════════
-# tests/ 
-# ══════════════════════════════════════════════════════════════════
+# tests/ — track everything
 !/tests/**
-
 
 # ══════════════════════════════════════════════════════════════════
 # Python
-# ══════════════════════════════════════════════════════════════════
 __pycache__/
 *.py[cod]
 *.pyo
@@ -83,18 +68,14 @@ build/
 .venv/
 venv/
 
-
 # ══════════════════════════════════════════════════════════════════
 # Jupyter
-# ══════════════════════════════════════════════════════════════════
 *.ipynb
 .ipynb_checkpoints/
 */.ipynb_checkpoints/
 
-
 # ══════════════════════════════════════════════════════════════════
 # OS
-# ══════════════════════════════════════════════════════════════════
 .DS_Store
 Thumbs.db
 desktop.ini

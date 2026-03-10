@@ -1,0 +1,1 @@
+# src/fault_ticket/__init__.py
