@@ -1,3 +1,5 @@
+# Telecom Fault Ticket Analysis — NCR
+
 ## Overview
 This repository documents an end-to-end analysis of ~37,000 Priority 1–3 fault tickets
 across six operational zones in the National Capital Region (NCR). The work spans pipeline engineering, KPI modelling, zone benchmarking, site risk
@@ -15,6 +17,18 @@ included in this repository.
 | P3 | Zone Benchmarking | Priority-adjusted scorecard, P3.2 breach deep-dive |
 | P4 | City Intelligence | City-level risk scoring, composite index |
 | P5 | Site & Engineer Risk | Site risk profiling, field engineer load equity |
+
+## Repository Structure
+```
+├── docs/        # Project documentation
+├── src/         # Source modules — pipeline, metrics, config
+├── tests/       # Pipeline tests — confidence, config, metrics, pipeline, rfo_standardization, sla_compliance
+├── LICENSE
+├── README.md
+├── config.py
+├── loading.py
+└── requirements.txt
+```
 
 ## Status
 🔧 Pipeline and source modules — complete  
