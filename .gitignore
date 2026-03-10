@@ -51,7 +51,7 @@
 !/src/fault_ticket/
 !/src/visualization/
 !/src/utils/
-/src/**
+/src/*
 !src/fault_ticket/pipeline.py
 !src/fault_ticket/metrics.py
 !src/fault_ticket/analysis.py
