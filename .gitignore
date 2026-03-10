@@ -11,7 +11,8 @@
 !/output/
 !/reports/
 !/src/
-
+!config.py
+!loading.py
 
 # ══════════════════════════════════════════════════════════════════
 # data/ — empty for now (all contents blocked)
@@ -23,7 +24,7 @@
 # docs/ — empty for now (all contents blocked)
 # ══════════════════════════════════════════════════════════════════
 /docs/**
-
+!/docs/pipeline_decisions.md
 
 # ══════════════════════════════════════════════════════════════════
 # notebooks/ — empty for now (all contents blocked)
@@ -44,9 +45,23 @@
 
 
 # ══════════════════════════════════════════════════════════════════
-# src/ — empty for now (all contents blocked)
+# src/ 
 # ══════════════════════════════════════════════════════════════════
 /src/**
+!src/fault_ticket/pipeline.py
+!src/fault_ticket/metrics.py
+!src/fault_ticket/analysis.py
+!src/fault_ticket/__init__.py
+!src/visualization/common_plots.py
+!src/visualization/fault_ticket_plots.py
+!src/visualization/__init__.py
+!src/utils/__init__.py
+!src/__init__.py
+
+# ══════════════════════════════════════════════════════════════════
+# tests/ 
+# ══════════════════════════════════════════════════════════════════
+!/tests/**
 
 
 # ══════════════════════════════════════════════════════════════════
