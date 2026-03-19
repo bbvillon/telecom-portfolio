@@ -59,7 +59,7 @@ def create_bar_graph(ax, data, x_col, y_col, title="", x_label="", y_label="",
                 ax.text(bar.get_x() + bar.get_width()/2, height,
                        f'{int(height)}', ha='center', va='bottom', fontsize=9)
 
-    ax.set_title(title)
+    ax.set_title(title, fontsize=11, fontweight='bold', pad=8)
     ax.set_xlabel(x_label)
     ax.set_ylabel(y_label)
     plt.setp(ax.get_xticklabels(), rotation=rotation, ha='right')

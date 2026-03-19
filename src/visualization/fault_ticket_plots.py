@@ -123,7 +123,7 @@ def plot_noc_vs_field_time(ax, df=None, summary=None):
     w    = 0.38
 
     bn = ax.bar(x - w/2, data['Avg_NOC_Time'],   w,
-                label='NOC/ROC Time',   color='#5b9bd5', edgecolor='white', linewidth=0.6)
+                label='NOC Time',   color='#5b9bd5', edgecolor='white', linewidth=0.6)
     bf = ax.bar(x + w/2, data['Avg_Field_Time'], w,
                 label='Field Engr Time', color='#ed7d31', edgecolor='white', linewidth=0.6)
 
@@ -136,7 +136,7 @@ def plot_noc_vs_field_time(ax, df=None, summary=None):
     ax.set_xticks(x)
     ax.set_xticklabels(ZONE_ORDER, fontsize=8)
     ax.legend(fontsize=8, framealpha=0.7, loc='upper right')
-    ax.set_title('NOC/ROC Time vs Field Engineer Time', fontsize=11, fontweight='bold', pad=8)
+    ax.set_title('NOC Time vs Field Engineer Time', fontsize=11, fontweight='bold', pad=8)
     ax.set_ylabel('Hours', fontsize=9)
     ax.set_xlabel('Zone', fontsize=9)
     ax.grid(axis='y', alpha=0.25, linestyle='--')

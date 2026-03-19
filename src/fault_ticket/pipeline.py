@@ -715,7 +715,15 @@ def clean_data(df: pd.DataFrame, region_scope=None, save_output: bool = True) ->
     df.loc[fill, 'StartDateTime'] = df.loc[fill, 'RESOLVEDDATE'] - pd.to_timedelta(df.loc[fill, 'OUTAGEDURATION'], unit='h')
     log.info(f"Step 20 – Filled {fill.sum()} blank StartDateTime values.")
 
-    df['SLA_Compliant']       = df.apply(determine_sla_compliance, axis=1)
+    _has_preset_sla = (
+        'SLA_Compliant' in df.columns
+        and df['SLA_Compliant'].dropna().isin([0, 1]).all()
+        and df['SLA_Compliant'].notna().all()
+    )
+    if not _has_preset_sla:
+        df['SLA_Compliant'] = df.apply(determine_sla_compliance, axis=1)
+    else:
+        logging.info("Step 20 – Using pre-set SLA_Compliant from input (synthetic data path)")
     df['DISPATCH_DELAY_HOURS']= (df['StartDateTime'] - df['REPORTDATE']).dt.total_seconds() / 3600
     df['SLA_Compliance_Rate'] = df['SLA_Compliant'] * 100
     df['SLA_Breach_Rate']     = 100 - df['SLA_Compliance_Rate']

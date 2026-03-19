@@ -8,26 +8,55 @@
 !/config.py
 !/loading.py
 !/LICENSE
+!/notebooks/
 !/tests/
 !/docs/
 !/src/
+!/output/
+!/reports/
 
 # ══════════════════════════════════════════════════════════════════
-# data/ — block all contents
-/data/**
+# data/ — allow only specific folders and files
 
-# docs/ — block everything except allowed file
+# allow the data folder
+!/data/
+
+# allow subfolders
+!/data/external/
+!/data/raw/
+!/data/raw/fault_tickets/
+
+# ignore everything inside data subfolders
+/data/external/*
+!/data/external/site_database_synthetic.csv
+
+/data/raw/fault_tickets/*
+!/data/raw/fault_tickets/synthetic_dataset.csv
+
+!/data/.gitkeep
+# ══════════════════════════════════════════════════════════════════
+
+# docs/ — allow only specific files
 /docs/**
+!/docs/data_dictionary.md
 !/docs/pipeline_decisions.md
 
-# notebooks/ — block all
+# notebooks/ — allow only specific files
 /notebooks/**
+!/notebooks/project1_ncr_baseline/
+!/notebooks/project1_ncr_baseline/*.ipynb
+/notebooks/project1_ncr_baseline/00__run_script.ipynb
 
-# output/ — block all
+# output/ — allow only specific files
 /output/**
+!/output/ncr_summary.csv
+!/output/data_validation_report.csv
 
-# reports/ — block all
+# reports/ — allow only specific files
 /reports/**
+!/reports/figures/
+!/reports/figures/project1_ncr/
+!/reports/figures/project1_ncr/**
 
 # ══════════════════════════════════════════════════════════════════
 # src/ — allow only specific files
@@ -42,15 +71,18 @@
 /src/utils/*
 
 # allow only the portfolio modules
-!src/__init__.py
-!src/fault_ticket/pipeline.py
-!src/fault_ticket/metrics.py
-!src/fault_ticket/analysis.py
-!src/fault_ticket/__init__.py
-!src/visualization/common_plots.py
-!src/visualization/fault_ticket_plots.py
-!src/visualization/__init__.py
-!src/utils/__init__.py
+!/src/__init__.py
+!/src/fault_ticket/pipeline.py
+!/src/fault_ticket/metrics.py
+!/src/fault_ticket/analysis.py
+!/src/fault_ticket/__init__.py
+!/src/visualization/common_plots.py
+!/src/visualization/fault_ticket_plots.py
+!/src/visualization/__init__.py
+!/src/utils/__init__.py
+
+# ignore the projects folder completely for now
+/src/projects/
 
 # ignore the projects folder completely for now
 /src/projects/
@@ -74,6 +106,7 @@ venv/
 # ══════════════════════════════════════════════════════════════════
 # Jupyter
 *.ipynb
+!notebooks/project1_ncr_baseline/*.ipynb
 .ipynb_checkpoints/
 */.ipynb_checkpoints/
 

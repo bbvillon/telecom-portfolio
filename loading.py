@@ -32,11 +32,20 @@ def load_data(file_path='../data/fault_tickets.csv'):
         'Fault Type', 'DESCRIPTION', 'RootCause', 'StartDateTime', 
         'NEType', 'ActionTaken'
     ]
+    # Fallback to synthetic if real data not available
+    synthetic_path = 'data/raw/fault_tickets/synthetic_dataset.csv'
     
     if not os.path.exists(file_path):
-        raise FileNotFoundError(
-            f"Fault ticket file not found: {file_path}\n"
-            f"Please provide a valid CSV file path or generate synthetic data externally."
+        if os.path.exists(synthetic_path):
+            logging.warning(
+                f"Real dataset not found: {file_path}\n"
+                f"Falling back to synthetic dataset: {synthetic_path}"
+            )
+            file_path = synthetic_path
+        else:
+            raise FileNotFoundError(
+                f"Neither real dataset ({file_path}) nor synthetic dataset ({synthetic_path}) found.\n"
+                f"Run notebooks/project1_ncr_baseline/00_synthetic_data_generator.ipynb to generate synthetic data."        
         )
     
     try:
@@ -77,14 +86,20 @@ def load_site_database(file_path='./data/external/site_database.csv'):
         ValueError: If required columns missing
     """
     required_cols = ['PLAID', 'AssignArea', 'AssignCity']
-    
+    synthetic_path = './data/external/site_database_synthetic.csv'
     if not os.path.exists(file_path):
-        logging.warning(
-            f"Site database not found: {file_path}\n"
-            f"Region 3 tickets will have Zone/City set to 'Unknown'."
-        )
-        # Return empty dataframe with correct schema so merge doesn't break
-        return pd.DataFrame(columns=required_cols)
+        if os.path.exists(synthetic_path):
+            logging.warning(
+                f"Site database not found: {file_path}\n"
+                f"Falling back to synthetic site database: {synthetic_path}"
+            )
+            file_path = synthetic_path
+        else:
+            logging.warning(
+                f"Neither site database ({file_path}) nor synthetic ({synthetic_path}) found.\n"
+                f"Region 3 tickets will have Zone/City set to 'Unknown'."
+            )
+            return pd.DataFrame(columns=required_cols)    
     
     try:
         df_site = pd.read_csv(file_path, low_memory=False, encoding='utf-8')

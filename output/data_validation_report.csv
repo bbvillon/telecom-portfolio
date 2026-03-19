@@ -1,0 +1,8 @@
+check,passed
+Required columns present,True
+No duplicate tickets,True
+All regions valid,True
+SLA_Compliant values valid,True
+No negative outage durations,True
+Priority_Urgency format valid,True
+Resolution_Path values valid,True
