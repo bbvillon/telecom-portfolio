@@ -42,21 +42,27 @@
 !/docs/pipeline_decisions.md
 
 # notebooks/ — allow only specific files
-/notebooks/**
+/notebooks/*
 !/notebooks/project1_ncr_baseline/
+!/notebooks/project2_resolution_paths/
 !/notebooks/project1_ncr_baseline/*.ipynb
+!/notebooks/project2_resolution_paths/*.ipynb
 /notebooks/project1_ncr_baseline/00__run_script.ipynb
 
 # output/ — allow only specific files
 /output/**
 !/output/ncr_summary.csv
 !/output/data_validation_report.csv
+!/output/resolution_path_analysis.csv
+!/output/top_100_sites.csv
 
 # reports/ — allow only specific files
 /reports/**
 !/reports/figures/
 !/reports/figures/project1_ncr/
+!/reports/figures/project2_ncr/
 !/reports/figures/project1_ncr/**
+!/reports/figures/project2_ncr/**
 
 # ══════════════════════════════════════════════════════════════════
 # src/ — allow only specific files
@@ -107,6 +113,7 @@ venv/
 # Jupyter
 *.ipynb
 !notebooks/project1_ncr_baseline/*.ipynb
+!notebooks/project2_resolution_paths/*.ipynb
 .ipynb_checkpoints/
 */.ipynb_checkpoints/
 

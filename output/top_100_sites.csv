@@ -1,0 +1,101 @@
+SiteName,Tickets,SLA_Rate,Avg_Duration,Region,City
+Region3_SAN JUAN CITY_b5b00bf5,1125,0.9,81.22,Region 3,SAN JUAN CITY
+Region3_MAKATI CITY_89796080,1098,0.79,34.14,Region 3,MAKATI CITY
+Region2_Unknown_Unknown,982,0.9,86.78,Region 2,Unknown
+Region4_Unknown_Unknown,945,0.76,220.59,Region 4,Unknown
+Region4_Unknown_30c1b3a0,906,0.67,90.4,Region 4,Unknown
+Region5_Unknown_Unknown,850,0.79,117.4,Region 5,Unknown
+Region3_Unknown_Unknown,819,0.83,100.94,Region 3,Unknown
+Region4_Unknown_1fa6b8cb,710,0.91,24.36,Region 4,Unknown
+Region5_Unknown_ce4a07ef,539,0.72,115.46,Region 5,Unknown
+Region3_MAKATI CITY_e38bb3d3,496,0.86,5.69,Region 3,MAKATI CITY
+Region1_Unknown_d1f20b19,430,0.78,65.67,Region 1,Unknown
+Region1_Unknown_Unknown,416,0.88,129.07,Region 1,Unknown
+Region2_Unknown_8859b2bc,390,0.75,414.04,Region 2,Unknown
+Region5_Unknown_da01e5fc,352,0.78,255.36,Region 5,Unknown
+Region3_QUEZON CITY_2c40fd71,345,0.66,68.64,Region 3,QUEZON CITY
+Region1_Unknown_81a4f9bd,337,0.78,196.98,Region 1,Unknown
+Region3_Unknown_ebc3e6c9,289,0.83,393.82,Region 3,Unknown
+Region3_CALOOCAN CITY_712a8f02,178,0.71,433.24,Region 3,CALOOCAN CITY
+Region5_Unknown_97955494,175,0.63,97.26,Region 5,Unknown
+Region3_QUEZON CITY_7a4de035,170,0.78,8.5,Region 3,QUEZON CITY
+Region3_Unknown_f49005a2,167,0.87,40.1,Region 3,Unknown
+Region2_Unknown_fae4eb51,164,0.88,106.25,Region 2,Unknown
+Region2_Unknown_f05c5d1a,158,0.69,374.18,Region 2,Unknown
+Region4_Unknown_f0476e16,132,0.8,153.52,Region 4,Unknown
+Region3_CALOOCAN CITY_260e8b5e,130,0.74,245.93,Region 3,CALOOCAN CITY
+Region3_MAKATI CITY_1a221861,119,0.84,17.6,Region 3,MAKATI CITY
+Region1_Unknown_b95fbf57,118,0.82,543.73,Region 1,Unknown
+Region3_PARANAQUE CITY_b1db66b7,102,0.83,153.87,Region 3,PARANAQUE CITY
+Region3_PARANAQUE CITY_8dcf24ee,95,0.82,11.58,Region 3,PARANAQUE CITY
+Region5_Unknown_46705e61,93,0.6,62.01,Region 5,Unknown
+Region3_MANILA CITY_f3067d6b,88,0.92,10.76,Region 3,MANILA CITY
+Region5_Unknown_44bcacbd,84,0.73,22.29,Region 5,Unknown
+Region3_MANILA CITY_b9f2202d,84,0.71,13.67,Region 3,MANILA CITY
+Region2_Unknown_b4ad9257,81,0.79,182.79,Region 2,Unknown
+Region4_Unknown_3ce0f7aa,77,0.45,105.09,Region 4,Unknown
+Region4_Unknown_09fb34b3,75,0.68,452.92,Region 4,Unknown
+Region3_PARANAQUE CITY_68257509,74,0.88,35.71,Region 3,PARANAQUE CITY
+Region3_MANILA CITY_226c3009,69,0.93,39.2,Region 3,MANILA CITY
+Region3_QUEZON CITY_e46f7d8d,68,0.87,17.23,Region 3,QUEZON CITY
+Region3_MALABON CITY_d7282058,66,0.65,94.52,Region 3,MALABON CITY
+Region3_QUEZON CITY_4dd054ff,66,0.89,37.87,Region 3,QUEZON CITY
+Region3_PARANAQUE CITY_faa5a39c,65,0.83,57.73,Region 3,PARANAQUE CITY
+Region3_PASAY CITY_ec44037d,64,0.94,47.52,Region 3,PASAY CITY
+Region5_Unknown_ebe19ca0,64,0.69,9.77,Region 5,Unknown
+Region4_Unknown_966c42b0,59,0.32,16.28,Region 4,Unknown
+Region5_Unknown_6003f24c,58,0.72,155.9,Region 5,Unknown
+Region3_QUEZON CITY_380f9200,58,0.86,152.83,Region 3,QUEZON CITY
+Region3_MAKATI CITY_be8bf946,58,0.78,408.78,Region 3,MAKATI CITY
+Region5_Unknown_8509aace,57,0.67,26.95,Region 5,Unknown
+Region4_Unknown_2cdf58dc,56,0.34,26.59,Region 4,Unknown
+Region2_Unknown_ebc3bda2,56,0.68,175.36,Region 2,Unknown
+Region3_QUEZON CITY_8b8f13ce,56,0.91,73.59,Region 3,QUEZON CITY
+Region3_TAGUIG CITY_b7898c1c,55,0.75,27.8,Region 3,TAGUIG CITY
+Region1_Unknown_978bf564,55,0.58,94.85,Region 1,Unknown
+Region3_CALOOCAN CITY_70cf9ccf,54,0.89,12.66,Region 3,CALOOCAN CITY
+Region1_Unknown_c499365e,53,0.68,121.39,Region 1,Unknown
+Region3_QUEZON CITY_85b6ba4a,52,0.71,16.84,Region 3,QUEZON CITY
+Region3_MANDALUYONG CITY_96f961d8,52,0.83,30.55,Region 3,MANDALUYONG CITY
+Region1_Unknown_d081c467,51,0.8,123.14,Region 1,Unknown
+Region4_Unknown_76c7c043,50,0.7,6.34,Region 4,Unknown
+Region3_CALOOCAN CITY_800ad72d,50,0.76,26.53,Region 3,CALOOCAN CITY
+Region3_MUNTINLUPA CITY_274b614b,48,0.79,7.58,Region 3,MUNTINLUPA CITY
+Region3_MANILA CITY_adc23fce,48,0.75,13.8,Region 3,MANILA CITY
+Region3_PASAY CITY_a6d0de1a,47,0.83,17.39,Region 3,PASAY CITY
+Region4_Unknown_66e5dbb7,47,0.6,11.06,Region 4,Unknown
+Region3_PARANAQUE CITY_bc004438,47,0.98,4.65,Region 3,PARANAQUE CITY
+Region3_MARIKINA CITY_b460c8e5,47,0.94,1.84,Region 3,MARIKINA CITY
+Region3_LAS PINAS CITY_13795748,46,0.8,317.49,Region 3,LAS PINAS CITY
+Region3_LAS PINAS CITY_a05a17ab,46,0.91,18.68,Region 3,LAS PINAS CITY
+Region1_Unknown_79aa7055,46,0.61,56.03,Region 1,Unknown
+Region5_Unknown_e7a208f4,45,0.71,151.73,Region 5,Unknown
+Region3_VALENZUELA CITY_f28b9379,45,0.93,18.1,Region 3,VALENZUELA CITY
+Region3_VALENZUELA CITY_d1696bd1,45,0.87,36.06,Region 3,VALENZUELA CITY
+Region1_Unknown_7a6219f1,44,0.64,8.14,Region 1,Unknown
+Region5_Unknown_aef63b80,44,0.41,10.23,Region 5,Unknown
+Region3_MAKATI CITY_bf897c0a,44,0.86,13.37,Region 3,MAKATI CITY
+Region3_PARANAQUE CITY_2fb69997,44,0.89,6.9,Region 3,PARANAQUE CITY
+Region1_Unknown_36326220,44,0.73,9.45,Region 1,Unknown
+Region4_Unknown_d5846c08,44,0.59,54.19,Region 4,Unknown
+Region3_MALABON CITY_022c0b9c,44,0.91,7.03,Region 3,MALABON CITY
+Region2_Unknown_dc676086,43,0.86,3.49,Region 2,Unknown
+Region3_MAKATI CITY_a9af6eda,43,0.91,6.21,Region 3,MAKATI CITY
+Region3_MUNTINLUPA CITY_41199e99,43,0.74,29.81,Region 3,MUNTINLUPA CITY
+Region3_MAKATI CITY_7f5889ae,42,0.86,16.39,Region 3,MAKATI CITY
+Region3_MANILA CITY_9b629f22,42,0.9,20.72,Region 3,MANILA CITY
+Region3_TAGUIG CITY_c8b8032e,42,0.9,23.69,Region 3,TAGUIG CITY
+Region4_Unknown_59fbbd44,41,0.15,33.1,Region 4,Unknown
+Region3_CALOOCAN CITY_51dff01b,41,0.93,1.45,Region 3,CALOOCAN CITY
+Region3_TAGUIG CITY_c2550f91,41,0.9,10.46,Region 3,TAGUIG CITY
+Region5_Unknown_5d924005,41,0.56,23.82,Region 5,Unknown
+Region4_Unknown_eb228e9a,41,0.59,14.83,Region 4,Unknown
+Region3_PASAY CITY_d47d9f24,41,0.95,1.64,Region 3,PASAY CITY
+Region4_Unknown_4e87344a,40,0.65,62.81,Region 4,Unknown
+Region4_Unknown_82c8f615,40,0.48,6.16,Region 4,Unknown
+Region1_Unknown_f7b926e0,40,0.52,182.17,Region 1,Unknown
+Region4_Unknown_15dc2a0b,40,0.62,22.14,Region 4,Unknown
+Region2_Unknown_217e7040,40,0.55,18.88,Region 2,Unknown
+Region1_Unknown_b83164b1,40,0.6,15.99,Region 1,Unknown
+Region3_CALOOCAN CITY_2f023980,40,0.95,3.54,Region 3,CALOOCAN CITY
+Region4_Unknown_fbad6552,40,0.22,241.06,Region 4,Unknown

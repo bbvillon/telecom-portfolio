@@ -71,36 +71,50 @@ The analysis is organised into a series of focused projects:
 | # | Project | Focus | Status |
 |---|---------|-------|--------|
 | P1 | NCR Baseline | Zone-level MTTR, SLA, fault density | Complete |
-| P2 | Resolution Paths | Field dispatch anatomy, RFO breakdown, Zone 1 site risk | Pending |
+| P2 | Resolution Paths | Field dispatch anatomy, RFO breakdown, Zone 1 site risk | Complete |
 | P3 | Zone Benchmarking | Priority-adjusted scorecard, P3.2 breach deep-dive | Pending |
 | P4 | City Intelligence | City-level risk scoring, composite index | Pending |
 | P5 | Site & Engineer Risk | Site risk profiling, field engineer load equity | Pending |
 
 ## Repository Structure
 ```
-├── docs/        # Design decisions and project documentation
-│   ├── data_dictionary.md
-│   └── pipeline_decisions.md
-├── notebooks/   # Analysis notebooks (including synthetic data generator)
-│   └── project1_ncr_baseline/
-│       ├── 00_synthetic_data_generator.ipynb
-│       ├── 01_data_quality_assessment.ipynb
-│       ├── 02_cleaned_data_analysis.ipynb
-│       └── ...
-├── output/      # Processed datasets and KPI summaries
+telecom-portfolio-complete/
+├── data/
+│   ├── raw/fault_tickets/
+│   │   ├── national_dataset_.csv         # Full dataset (~100MB, not committed)
+│   │   └── synthetic_dataset.csv         # Synthetic data for development/testing
+│   └── external/
+│       ├── site_database_.csv            # PLAID → Zone/City mapping (not committed)
+│       └── site_database_synthetic_.csv  # Synthetic data for development/testing
+├── docs/                            
+│   ├── data_dictionary.md                # Column definitions for cleaned dataset
+│   └── pipeline_decisions.md             # Rationale for cleaning pipeline choices
+├── notebooks/                       
+│   └── project1_ncr_baseline/            # Synthetic Data Generator, Data Quality, Cleaned Data, NCR Performance Analysis, Dashboard, Business Summary
+│   └── project2_resolution_paths/        # Resolution Path Analysis, Fault Anatomy, Zone 1 Site Risk, Project 2 Summary
+├── output/                               # Processed datasets and KPI summaries
 │   ├── ncr_summary.csv
-│   └── data_validation_report.csv
-├── reports/     # Figures and visual outputs
+│   ├── data_validation_report.csv
+│   ├── resolution_path_analysis.csv
+│   └── top_100_sites.csv
+├── reports/                              # Figures and visual outputs
 │   └── figures/
 │       └── project1_ncr/
-│           ├── 02_quick_checks.png
-│           └── ...
-├── src/         # Pipeline and analysis modules
-├── tests/       # Unit tests for pipeline and metrics
+│       └── project1_ncr/
+├── src/
+│   ├── fault_ticket/
+│   │   ├── pipeline.py                    # 5-phase cleaning pipeline (26 steps)
+│   │   ├── metrics.py                     # MTTR, SLA, NOC/field time KPIs
+│   │   └── analysis.py                    # Aggregation helpers
+│   ├── utils/
+│   └── visualization/
+│       ├── common_plots.py                # Commonly used plots
+│       └── fault_ticket_plots.py          # Plots used for fault ticket analysis
+├── tests/                                 # Unit tests for pipeline and metrics
 ├── LICENSE
 ├── README.md
-├── config.py
-├── loading.py
+├── config.py                              # SLA thresholds, regions, palettes, logger
+├── loading.py                             # Data loading, site DB
 └── requirements.txt
 ```
 

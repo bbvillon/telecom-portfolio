@@ -1,0 +1,4 @@
+Resolution_Path,Count,Avg_Duration,SLA_Rate,Avg_Dispatch
+Auto_Self_Restored,7646,84.99,0.87,2.25
+Field_Dispatch_Restored,26561,64.91,0.72,0.61
+NOC_Remote_Restored,17487,89.04,0.88,279.27
