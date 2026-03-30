@@ -72,7 +72,7 @@ The analysis is organised into a series of focused projects:
 |---|---------|-------|--------|
 | P1 | NCR Baseline | Zone-level MTTR, SLA, fault density | Complete |
 | P2 | Resolution Paths | Field dispatch anatomy, RFO breakdown, Zone 1 site risk | Complete |
-| P3 | Zone Benchmarking | Priority-adjusted scorecard, P3.2 breach deep-dive | Pending |
+| P3 | Zone Benchmarking | Priority-adjusted scorecard, P3.2 breach deep-dive | Complete |
 | P4 | City Intelligence | City-level risk scoring, composite index | Pending |
 | P5 | Site & Engineer Risk | Site risk profiling, field engineer load equity | Pending |
 
@@ -90,8 +90,9 @@ telecom-portfolio-complete/
 │   ├── data_dictionary.md                # Column definitions for cleaned dataset
 │   └── pipeline_decisions.md             # Rationale for cleaning pipeline choices
 ├── notebooks/                       
-│   └── project1_ncr_baseline/            # Synthetic Data Generator, Data Quality, Cleaned Data, NCR Performance Analysis, Dashboard, Business Summary
-│   └── project2_resolution_paths/        # Resolution Path Analysis, Fault Anatomy, Zone 1 Site Risk, Project 2 Summary
+│   ├── project1_ncr_baseline/            # Synthetic Data Generator, Data Quality, Cleaned Data, NCR Performance Analysis, Dashboard, Business Summary
+│   ├── project2_resolution_paths/        # Resolution Path Analysis, Fault Anatomy, Zone 1 Site Risk, Project 2 Summary
+│   └── project3_zone_performance/        # Priority SLA Matrix, Benchmark Scorecard, Project 3 Summary
 ├── output/                               # Processed datasets and KPI summaries
 │   ├── ncr_summary.csv
 │   ├── data_validation_report.csv
@@ -99,8 +100,9 @@ telecom-portfolio-complete/
 │   └── top_100_sites.csv
 ├── reports/                              # Figures and visual outputs
 │   └── figures/
-│       └── project1_ncr/
-│       └── project1_ncr/
+│       ├── project1_ncr/
+│       ├── project2_ncr/
+│       └── ...
 ├── src/
 │   ├── fault_ticket/
 │   │   ├── pipeline.py                    # 5-phase cleaning pipeline (26 steps)
