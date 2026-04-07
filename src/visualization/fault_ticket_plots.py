@@ -2,6 +2,7 @@
 Fault Ticket Domain-Specific Plots
 """
 
+import os
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -391,7 +392,7 @@ def plot_city_metric_by_zone(city_df, zone_order, value_col,
             continue
 
         # Reference line
-        ref = ref_line_fn(zdf) if ref_line_fn else None
+        ref      = ref_line_fn(zdf) if ref_line_fn else None
         zone_avg = ref[0] if ref else None
 
         colors = [color_fn(v, zone_avg) for v in zdf[value_col]]
@@ -403,24 +404,31 @@ def plot_city_metric_by_zone(city_df, zone_order, value_col,
                        linewidth=1.2, label=ref[1])
             ax.legend(fontsize=8)
 
+        # Annotation: place at 97% of bar width so it scales with bar length
+        x_max = ax.get_xlim()[1]
         extras = (zdf[annotation_extra_col].values
                   if annotation_extra_col else [None] * len(zdf))
         for bar, val, extra in zip(bars, zdf[value_col], extras):
-            ax.text(bar.get_width() + 0.3,
+            bar_w = bar.get_width()
+            ax.text(bar_w * 0.97 if bar_w > 0 else 0,
                     bar.get_y() + bar.get_height() / 2,
                     annotation_fn(val, extra),
-                    va='center', fontsize=7.5)
+                    va='center', ha='right', fontsize=7.5)
 
         ax.set_title(title_tmpl.format(zone=zone),
-                     fontsize=10, fontweight='bold', pad=6)
-        ax.set_xlabel(xlabel, fontsize=9)
+                     fontsize=9, fontweight='bold', pad=6)
+        ax.set_xlabel(xlabel, fontsize=8)
+        ax.tick_params(axis='y', labelsize=7)
         ax.invert_yaxis()
         ax.spines['top'].set_visible(False)
         ax.spines['right'].set_visible(False)
 
-    plt.tight_layout(pad=2.0)
+    # left=0.18 gives city-name labels enough room (was 0.08 — caused the
+    # "tight_layout cannot make Axes width small enough" UserWarning).
+    # wspace increased to match the wider left margin.
+    plt.subplots_adjust(left=0.18, right=0.97, top=0.94, bottom=0.08,
+                        wspace=0.35, hspace=0.3)
     if save_path:
-        import os
         os.makedirs(os.path.dirname(save_path), exist_ok=True)
         plt.savefig(save_path, dpi=150, bbox_inches='tight')
     return fig
