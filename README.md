@@ -73,7 +73,7 @@ The analysis is organised into a series of focused projects:
 | P1 | NCR Baseline | Zone-level MTTR, SLA, fault density | Complete |
 | P2 | Resolution Paths | Field dispatch anatomy, RFO breakdown, Zone 1 site risk | Complete |
 | P3 | Zone Benchmarking | Priority-adjusted scorecard, P3.2 breach deep-dive | Complete |
-| P4 | City Intelligence | City-level risk scoring, composite index | Pending |
+| P4 | City Intelligence | City-level risk scoring, composite index | Complete |
 | P5 | Site & Engineer Risk | Site risk profiling, field engineer load equity | Pending |
 
 ## Repository Structure
