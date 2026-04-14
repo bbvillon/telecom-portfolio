@@ -74,7 +74,7 @@ The analysis is organised into a series of focused projects:
 | P2 | Resolution Paths | Field dispatch anatomy, RFO breakdown, Zone 1 site risk | Complete |
 | P3 | Zone Benchmarking | Priority-adjusted scorecard, P3.2 breach deep-dive | Complete |
 | P4 | City Intelligence | City-level risk scoring, composite index | Complete |
-| P5 | Site & Engineer Risk | Site risk profiling, field engineer load equity | Pending |
+| P5 | Site & Engineer Risk | Site risk profiling, field engineer load equity | Complete |
 
 ## Repository Structure
 ```
@@ -92,7 +92,8 @@ telecom-portfolio-complete/
 ├── notebooks/                       
 │   ├── project1_ncr_baseline/            # Synthetic Data Generator, Data Quality, Cleaned Data, NCR Performance Analysis, Dashboard, Business Summary
 │   ├── project2_resolution_paths/        # Resolution Path Analysis, Fault Anatomy, Zone 1 Site Risk, Project 2 Summary
-│   └── project3_zone_performance/        # Priority SLA Matrix, Benchmark Scorecard, Project 3 Summary
+│   ├── project3_zone_performance/        # Priority SLA Matrix, Benchmark Scorecard, Project 3 Summary
+│   └── ...
 ├── output/                               # Processed datasets and KPI summaries
 │   ├── ncr_summary.csv
 │   ├── data_validation_report.csv

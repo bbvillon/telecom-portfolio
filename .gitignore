@@ -47,10 +47,12 @@
 !/notebooks/project2_resolution_paths/
 !/notebooks/project3_zone_performance/
 !/notebooks/project4_city_intelligence/
+!/notebooks/project5_site_risk_profiling/
 !/notebooks/project1_ncr_baseline/*.ipynb
 !/notebooks/project2_resolution_paths/*.ipynb
 !/notebooks/project3_zone_performance/*.ipynb
 !/notebooks/project4_city_intelligence/*.ipynb
+!/notebooks/project5_site_risk_profiling/*.ipynb
 /notebooks/project1_ncr_baseline/00__run_script.ipynb
 
 # output/ — allow only specific files
@@ -67,10 +69,12 @@
 !/reports/figures/project2_ncr/
 !/reports/figures/project3_ncr/
 !/reports/figures/project4_ncr/
+!/reports/figures/project5_ncr/
 !/reports/figures/project1_ncr/**
 !/reports/figures/project2_ncr/**
 !/reports/figures/project3_ncr/**
 !/reports/figures/project4_ncr/**
+!/reports/figures/project5_ncr/**
 
 
 # ══════════════════════════════════════════════════════════════════
@@ -125,6 +129,7 @@ venv/
 !notebooks/project2_resolution_paths/*.ipynb
 !notebooks/project3_zone_performance/*.ipynb
 !notebooks/project4_city_intelligence/*.ipynb
+!notebooks/project5_site_risk_profiling/*.ipynb
 .ipynb_checkpoints/
 */.ipynb_checkpoints/
 
