@@ -58,13 +58,6 @@ skills applied to telecom operations data:
 - Creating **engineer workload and dispatch analysis** for operational planning
 - Writing **testable, modular Python code** for analytics pipelines
 
-## Key Topics
-- Telecom fault ticket analysis
-- SLA compliance and MTTR modelling
-- Zone performance benchmarking
-- Site-level risk profiling
-- Field engineer workload analysis
-
 ## Project Series
 The analysis is organised into a series of focused projects:
 
@@ -75,17 +68,20 @@ The analysis is organised into a series of focused projects:
 | P3 | Zone Benchmarking | Priority-adjusted scorecard, P3.2 breach deep-dive | Complete |
 | P4 | City Intelligence | City-level risk scoring, composite index | Complete |
 | P5 | Site & Engineer Risk | Site risk profiling, field engineer load equity | Complete |
+| P6 | Temporal & Scheduling | Seasonal patterns, Holy Week/typhoon surge, roster alignment | WIP |
+| P7 | Infrastructure Stress | NE-level stress analysis, PM priority engine | WIP |
+| P8 | SLA Breach Prediction | ML classifier, feature engineering, operational scoring | WIP |
 
 ## Repository Structure
 ```
 telecom-portfolio-complete/
 ├── data/
 │   ├── raw/fault_tickets/
-│   │   ├── national_dataset_.csv         # Full dataset (~100MB, not committed)
+│   │   ├── national_dataset.csv         # Full dataset (~100MB, not committed)
 │   │   └── synthetic_dataset.csv         # Synthetic data for development/testing
 │   └── external/
-│       ├── site_database_.csv            # PLAID → Zone/City mapping (not committed)
-│       └── site_database_synthetic_.csv  # Synthetic data for development/testing
+│       ├── site_database.csv            # PLAID → Zone/City mapping (not committed)
+│       └── site_database_synthetic.csv  # Synthetic data for development/testing
 ├── docs/                            
 │   ├── data_dictionary.md                # Column definitions for cleaned dataset
 │   └── pipeline_decisions.md             # Rationale for cleaning pipeline choices
@@ -121,10 +117,6 @@ telecom-portfolio-complete/
 └── requirements.txt
 ```
 
-## Status
-🔧 Pipeline and source modules: complete  
-📓 Notebooks: being published in stages
-
 ## Setup
 Clone the repository and install dependencies:
 
@@ -139,8 +131,8 @@ To reproduce the analysis:
 2. Run the cleaning and preprocessing workflow
     `notebooks/project1_ncr_baseline/02_cleaned_data_analysis.ipynb`
 
-3. Additional analysis notebooks in
-    `notebooks/project1_ncr_baseline/`
+3. Run analysis notebooks in order following the Project Series table above.
+   Each project folder contains its own notebooks numbered sequentially.
 
-> Notebooks generate `output/cleaned_fault_ticket.csv`, which is used
-> by subsequent analysis steps.
+> Notebooks expect `output/cleaned_fault_ticket.csv` to exist before running
+> analysis steps. This is generated in step 2.
