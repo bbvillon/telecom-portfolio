@@ -69,7 +69,7 @@ The analysis is organised into a series of focused projects:
 | P4 | City Intelligence | City-level risk scoring, composite index | Complete |
 | P5 | Site & Engineer Risk | Site risk profiling, field engineer load equity | Complete |
 | P6 | Infrastructure Stress | NE-level stress analysis, PM priority engine | Complete |
-| P7 | Temporal & Scheduling | Seasonal patterns, Holy Week/typhoon surge, roster alignment | WIP |
+| P7 | Temporal & Scheduling | Seasonal patterns, Holy Week/typhoon surge, roster alignment | Complete |
 | P8 | SLA Breach Prediction | ML classifier, feature engineering, operational scoring | WIP |
 
 ## Repository Structure
